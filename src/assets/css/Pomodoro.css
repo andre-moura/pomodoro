@@ -1,0 +1,35 @@
+.timer {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.unpressed {
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    font-size: 22px;
+    height: 55px;
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+}
+
+.pressed {
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    font-size: 22px;
+    height: 55px;
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    transform: translateY(6px);
+    box-shadow: none;
+    transition: color 0.5s ease-in-out 0s;
+}

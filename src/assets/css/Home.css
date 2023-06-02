@@ -1,0 +1,54 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #dd2f3ed7, #6d000dda);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.square-container {
+    width: 300px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.tab.active {
+    color: #333;
+}
+
+.content {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}

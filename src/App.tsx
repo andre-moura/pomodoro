@@ -1,12 +1,14 @@
 import './App.css';
-import Stopwatch from './components/Stopwatch';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <Stopwatch/>
-    </>
+    <div>
+      <Navbar/>
+      <Home/>
+    </div>
   );
-}
+};
 
 export default App;
