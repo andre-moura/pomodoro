@@ -2,7 +2,7 @@
 
 # Pomodoro Timer
 
-<img src="https://github.com/andre-moura/pomodoro/blob/main/src/assets/images/Home.png?raw=true"/>
+<img src="https://github.com/andre-moura/pomodoro/blob/main/src/assets/images/home-page.png?raw=true"/>
 
 ## How to get started
 
