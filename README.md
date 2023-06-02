@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/Node-v18.8.0-green"/> <img src="https://img.shields.io/badge/Javascript-5.0-darkblue"/> <img src="https://img.shields.io/badge/React-v18.2.0-blue"/> <img src="https://img.shields.io/badge/React--Bootstrap-v2.5.0-blueviolet"/> <img src="https://img.shields.io/badge/HTML-5-orange"/> <img src="https://img.shields.io/badge/CSS-3-purple"/> 
+<img src="https://img.shields.io/badge/Node-v18.8.0-green"/> <img src="https://img.shields.io/badge/Javascript-5.0-darkblue"/> <img src="https://img.shields.io/badge/React-v18.2.0-blue"/> <img src="https://img.shields.io/badge/HTML-5-orange"/> <img src="https://img.shields.io/badge/CSS-3-purple"/> 
 
 # Pomodoro Timer
 
