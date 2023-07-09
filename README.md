@@ -13,11 +13,11 @@ git clone https://github.com/andre-moura/pomodoro.git
 
 Download the libraries and dependencies
 ```bash
-npm i
+npm install
 ```
 
 Run the application in the development mode
 ```bash
-npm start
+npm run dev --port 3000
 ```
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
