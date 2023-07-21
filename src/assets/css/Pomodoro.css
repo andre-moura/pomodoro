@@ -3,6 +3,13 @@
     margin-bottom: 2rem;
 }
 
+.timer {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    /* Change the timer text color to white */
+}
+
 .unpressed {
     cursor: pointer;
     border: none;
@@ -13,9 +20,14 @@
     height: 55px;
     font-weight: bold;
     width: 200px;
-    background-color: white;
+    background-color: #333;
+    /* Change button background color to dark */
+    color: #fff;
+    /* Change button text color to white */
     transition: color 0.5s ease-in-out 0s;
-    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    box-shadow: none;
+    box-shadow: #222 0px 6px 0px;
+    /* Remove the box shadow for the pressed button */
 }
 
 .pressed {
@@ -28,8 +40,12 @@
     height: 55px;
     font-weight: bold;
     width: 200px;
-    background-color: white;
+    background-color: #333;
+    /* Change button background color to dark */
+    color: #fff;
+    /* Change button text color to white */
     transform: translateY(6px);
     box-shadow: none;
+    /* Remove the box shadow for the pressed button */
     transition: color 0.5s ease-in-out 0s;
 }

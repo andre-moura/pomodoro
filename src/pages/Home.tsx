@@ -11,6 +11,18 @@ const Home: React.FC = () => {
 
   return (
     <div className="home">
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <div className="square-container">
         <div className="tabs">
           <button
@@ -27,8 +39,8 @@ const Home: React.FC = () => {
           </button>
         </div>
         <div className="content">
-          {activeTab === "tab1" && <p><Pomodoro duration={25}/></p>}
-          {activeTab === "tab2" && <p><Pomodoro duration={5}/></p>}
+          {activeTab === "tab1" && <div><Pomodoro duration={25} /></div>}
+          {activeTab === "tab2" && <div><Pomodoro duration={5} /></div>}
         </div>
       </div>
     </div>

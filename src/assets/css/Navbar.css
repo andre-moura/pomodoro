@@ -3,8 +3,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #ccc;
+    background-color: #333;
+    /* Change background color to dark */
+    border-bottom: 1px solid #222;
+    /* Change border color to a darker shade */
 }
 
 .navbar-left {
@@ -15,9 +17,13 @@
 .navbar-icon {
     font-size: 20px;
     margin-right: 10px;
+    color: #fff;
+    /* Change icon color to white */
 }
 
 .navbar-title {
     font-size: 18px;
     font-weight: bold;
+    color: #fff;
+    /* Change title color to white */
 }
