@@ -4,26 +4,26 @@ html, body {
     padding: 0;
 }
 
-body {
-    background: linear-gradient(43deg, #cf545ed7, #dd2f3ed7, #b10015da);
-}
-
 .home {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 90vh;
+    align-items: center;
+    height: calc(100vh - 7.9vh);
+    /* Subtract the height of the navbar (5vh) */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+    /* rest of your styles */
 }
 
-.square-container {
-    width: 300px;
-    height: 300px;
+.clock-container {
+    width: 450px;
+    height: 250px;
     padding: 20px;
     background: rgba(0, 0, 0, 0.42);
-    border-radius: 16px;
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
-    border-radius: 16px;
+    border-radius: 4px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
@@ -31,7 +31,6 @@ body {
 .tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .tab {
@@ -86,7 +85,6 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.18);
     animation: animate 25s linear infinite;
     bottom: -150px;
-
 }
 
 .circles li:nth-child(1) {

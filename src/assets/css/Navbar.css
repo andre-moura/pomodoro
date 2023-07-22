@@ -2,16 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px 11px 20px;
     background-color: #333;
-    /* Change background color to dark */
-    border-bottom: 1px solid #222;
-    /* Change border color to a darker shade */
+    height: 5vh;
 }
 
 .navbar-left {
     display: flex;
     align-items: center;
+    padding-left: 30%;
 }
 
 .navbar-icon {

@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/Navbar.css";
-import logo from "../assets/images/pomodoro.png";
+import logo from "../assets/images/pomodoro.svg";
 
 const Navbar: React.FC = () => {
   const logoStyle = {
