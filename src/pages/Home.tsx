@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/Home.css";
 import Pomodoro from '../components/Pomodoro';
 
@@ -6,17 +6,21 @@ import Pomodoro from '../components/Pomodoro';
 const Home: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("tab1");
   const [backgroundColor, setBackgroundColor] = useState<string>(
-    // "linear-gradient(43deg, #cf545ed7, #dd2f3ed7, #b10015da)"
     "#dd2f3ed7"
   );
+
+  useEffect(() =>{
+    document.body.style.backgroundColor = backgroundColor;
+  })
 
   const handleTabChange = (tab: string, backgroundColor: string) => {
     setActiveTab(tab);
     setBackgroundColor(backgroundColor);
+    document.body.style.backgroundColor = backgroundColor;
   };
 
   return (
-    <div className="home" style={{ backgroundColor: backgroundColor }}>
+    <div className="home">
       <ul className="circles">
         <li></li>
         <li></li>
