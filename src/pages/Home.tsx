@@ -5,17 +5,9 @@ import Pomodoro from '../components/Pomodoro';
 
 const Home: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("tab1");
-  const [backgroundColor, setBackgroundColor] = useState<string>(
-    "#dd2f3ed7"
-  );
-
-  useEffect(() =>{
-    document.body.style.backgroundColor = backgroundColor;
-  })
 
   const handleTabChange = (tab: string, backgroundColor: string) => {
     setActiveTab(tab);
-    setBackgroundColor(backgroundColor);
     document.body.style.backgroundColor = backgroundColor;
   };
 

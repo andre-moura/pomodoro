@@ -2,6 +2,8 @@ html, body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    transition: background-color 0.6s ease; /* Adjust the duration and easing as needed */
+    background-color: #dd2f3ed7;
 }
 
 .home {
