@@ -13,18 +13,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="home">
-      <ul className="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
       <div className="square-container">
         <div className="clock-container">
           <div className="tabs">
