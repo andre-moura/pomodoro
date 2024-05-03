@@ -10,23 +10,21 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 7.9vh);
-    /* Subtract the height of the navbar (5vh) */
-    margin: 0;
-    padding: 0;
-    /* rest of your styles */
+    min-height: calc(100vh - 7vh); /* Adjusted height for mobile */
+    padding: 0; /* Adjusted padding for mobile */
+}
+
+.square-container {
+    width: 90%;
+    max-width: 700px;
+    z-index: 99;
 }
 
 .clock-container {
-    width: 450px;
-    height: 250px;
     padding: 20px;
     background: rgba(0, 0, 0, 0.42);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
     border-radius: 4px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for better visibility */
 }
 
 .tabs {
@@ -42,13 +40,11 @@ html, body {
     font-size: 16px;
     font-weight: bold;
     color: #999;
-    /* Change tab text color to a lighter shade */
     transition: color 0.3s ease;
 }
 
 .tab.active {
     color: #fff;
-    /* Change active tab text color to white */
 }
 
 .content {
@@ -58,5 +54,5 @@ html, body {
 p {
     font-size: 18px;
     color: #fff;
-    /* Change paragraph text color to white */
 }
+
