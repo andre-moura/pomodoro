@@ -73,7 +73,7 @@ Wanna run this locally because you don't trust the cloud? Fair enough.
 ### Clone and Run
 
 ```bash
-git clone https://github.com/yourusername/pomohelper.git
+git clone https://github.com/andre-moura/pomodoro.git
 cd pomohelper
 npm install
 npm run dev
