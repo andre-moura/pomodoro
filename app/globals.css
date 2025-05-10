@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 30% 98%;
+    --foreground: 220 10% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 20%;
+    --primary: 220 15% 40%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 10% 90%;
+    --secondary-foreground: 220 10% 20%;
+    --muted: 220 10% 94%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 220 10% 90%;
+    --accent-foreground: 220 10% 20%;
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 10% 85%;
+    --input: 220 10% 85%;
+    --ring: 220 15% 40%;
+    --radius: 0.75rem;
+
+    /* Pomodoro specific colors - softer, more harmonious palette */
+    --coral: 10 70% 65%;
+    --coral-foreground: 10 30% 20%;
+    --coral-muted: 10 30% 95%;
+
+    --sage: 120 25% 65%;
+    --sage-foreground: 120 30% 20%;
+    --sage-muted: 120 20% 95%;
+
+    --azure: 200 40% 65%;
+    --azure-foreground: 200 30% 20%;
+    --azure-muted: 200 30% 95%;
+  }
+
+  .dark {
+    --background: 220 20% 12%;
+    --foreground: 220 10% 90%;
+    --card: 220 20% 15%;
+    --card-foreground: 220 10% 90%;
+    --popover: 220 20% 15%;
+    --popover-foreground: 220 10% 90%;
+    --primary: 220 10% 80%;
+    --primary-foreground: 220 20% 15%;
+    --secondary: 220 10% 25%;
+    --secondary-foreground: 220 10% 90%;
+    --muted: 220 10% 20%;
+    --muted-foreground: 220 10% 70%;
+    --accent: 220 10% 25%;
+    --accent-foreground: 220 10% 90%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 10% 25%;
+    --input: 220 10% 25%;
+    --ring: 220 10% 70%;
+
+    /* Pomodoro specific colors - darker but still soft variants */
+    --coral: 10 50% 55%;
+    --coral-foreground: 10 15% 95%;
+    --coral-muted: 10 30% 20%;
+
+    --sage: 120 20% 45%;
+    --sage-foreground: 120 15% 95%;
+    --sage-muted: 120 20% 20%;
+
+    --azure: 200 30% 45%;
+    --azure-foreground: 200 15% 95%;
+    --azure-muted: 200 30% 20%;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-background/60;
+    @apply backdrop-blur-[12px];
+    @apply border;
+    @apply border-white/20;
+    @apply shadow-lg;
+    @apply dark:bg-background/40;
+    @apply dark:border-white/10;
+  }
+
+  .glass-card {
+    @apply bg-background/60;
+    @apply backdrop-blur-[12px];
+    @apply border;
+    @apply border-white/20;
+    @apply shadow-lg;
+    @apply rounded-xl;
+    @apply dark:bg-background/40;
+    @apply dark:border-white/10;
+  }
+
+  .focus-mode {
+    @apply text-coral-foreground;
+  }
+
+  .short-break-mode {
+    @apply text-sage-foreground;
+  }
+
+  .long-break-mode {
+    @apply text-azure-foreground;
+  }
+
+  .focus-mode-bg {
+    @apply bg-coral;
+    @apply text-white;
+  }
+
+  .short-break-mode-bg {
+    @apply bg-sage;
+    @apply text-white;
+  }
+
+  .long-break-mode-bg {
+    @apply bg-azure;
+    @apply text-white;
+  }
+
+  .focus-mode-muted {
+    @apply bg-coral-muted;
+    @apply text-coral-foreground;
+  }
+
+  .short-break-mode-muted {
+    @apply bg-sage-muted;
+    @apply text-sage-foreground;
+  }
+
+  .long-break-mode-muted {
+    @apply bg-azure-muted;
+    @apply text-azure-foreground;
+  }
+}
+
+body {
+  @apply bg-gradient-to-br from-background via-background to-background/90;
+}
+
+.dark body {
+  @apply bg-gradient-to-br from-background via-background to-background/90;
+}
+
+/* Custom background patterns */
+.bg-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='currentColor' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.dark .bg-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='currentColor' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
