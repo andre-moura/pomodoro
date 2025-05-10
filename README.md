@@ -74,7 +74,7 @@ Wanna run this locally because you don't trust the cloud? Fair enough.
 
 ```bash
 git clone https://github.com/andre-moura/pomodoro.git
-cd pomohelper
+cd pomodoro
 npm install
 npm run dev
 ```
