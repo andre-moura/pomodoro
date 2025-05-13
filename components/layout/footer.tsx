@@ -44,7 +44,7 @@ export function Footer() {
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Andre. All rights reserved.
+              &copy; 2022 Andre. All rights reserved.
             </p>
           </div>
         </div>
