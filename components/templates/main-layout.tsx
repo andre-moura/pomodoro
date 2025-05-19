@@ -9,7 +9,7 @@ export default function MainLayout() {
     <div className="min-h-screen flex flex-col bg-pattern">
       <MainHeader />
 
-      <main className="flex-1 container py-12 md:py-16">
+      <main className="flex-1 container py-12 md:py-16 flex items-center min-h-[calc(100vh-64px)]">
         <div className="max-w-md mx-auto">
           <PomodoroTimer />
         </div>
