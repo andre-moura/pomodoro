@@ -8,7 +8,7 @@ Here's a professional, clear, and just skeptical-enough `README.md` for your Pom
 
 **PomoHelper** is a sleek, no-nonsense Pomodoro timer built to help you focus better and work smarter—at least until your next snack break. Inspired by the Pomodoro Technique, it helps you stay on task using customizable timers and visual feedback.
 
-🌐 **Live App**: [https://pomohelper.netlify.app/](https://pomohelper.netlify.app/)
+🌐 **Live App**: [https://pomohelper.netlify.app/](https://pomohelper.netlify.app)
 
 ## 🔧 Features
 
@@ -25,7 +25,7 @@ Here's a professional, clear, and just skeptical-enough `README.md` for your Pom
 
 ### 1. 🏠 Home (Timer)
 
-![Home](https://raw.githubusercontent.com/andre-moura/images/refs/heads/main/pomo-helper/home.png)
+![Home](https://raw.githubusercontent.com/andre-moura/images/refs/heads/main/pomo-helper/index.png?raw=true)
 
 Your mission control. Start a focus session, take a break, or stare at the ticking clock and reflect on your life decisions. It shows:
 
@@ -37,7 +37,7 @@ Your mission control. Start a focus session, take a break, or stare at the ticki
 
 ### 2. ⚙️ Settings
 
-![Settings](https://raw.githubusercontent.com/andre-moura/images/refs/heads/main/pomo-helper/settings.png)
+![Settings](https://raw.githubusercontent.com/andre-moura/images/refs/heads/main/pomo-helper/settings.png?raw=true)
 
 Here’s where the magic (and micromanagement) happens. Set your:
 
@@ -50,7 +50,7 @@ Here’s where the magic (and micromanagement) happens. Set your:
 
 ### 3. 📊 Analytics
 
-![Analytics](https://raw.githubusercontent.com/andre-moura/images/refs/heads/main/pomo-helper/analytics.png)
+![Analytics](https://raw.githubusercontent.com/andre-moura/images/refs/heads/main/pomo-helper/analytics.png?raw=true)
 
 For when you want to pretend you’re being productive. Shows:
 
